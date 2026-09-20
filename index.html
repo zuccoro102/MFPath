@@ -104,7 +104,7 @@
                     <div class="row">
                         <div class="col-sm-8">
                             <ul>
-                                <li>加熱されたフィラメントから周囲への全熱伝達は、フィラメント端部の支持部からの熱伝導、熱放射、および周囲の気体を介した熱伝導という3つの成分の和となる。これらのうち、気体を介した熱伝達率のみが圧力によって変化する。気体の熱伝達率は、粘性流領域(高圧力領域)では圧力に依存しないが、分子流領域(低圧力領域、通常1000 Pa以下)では圧力に比例して変化する。さらに、圧力が下がると、気体の熱伝達率は無視できるようになり、熱伝達率は再び圧力に依存しなくなる。その結果、全熱伝達率は、圧力を対数軸にとったグラフ上で「S字」曲線を描くことになる。</li>
+                                <li>加熱されたフィラメントから周囲への全熱伝達は、フィラメント端部の支持部からの熱伝導、熱放射、および周囲の気体を介した熱伝導という3つの成分の和となる。これらのうち、気体を介した熱伝達率のみが圧力によって変化する。気体の熱伝達率は、粘性流領域(高圧力領域)では圧力に依存しないが、分子流領域(低圧力領域、通常1000 Pa程度以下)では圧力に比例して変化する。さらに、圧力が下がると、気体の熱伝達率は無視できるようになり、熱伝達率は再び圧力に依存しなくなる。その結果、全熱伝達率は、圧力を対数軸にとったグラフ上で「S字」曲線を描くことになる(後述)。</li>
                                 <li>気体による熱伝達の支配的な領域が粘性流から分子流へと移行する圧力(遷移圧力)は、得られたS字曲線の変曲点から特定できる。この圧力における気体分子の平均自由行程は、同軸構造における伝熱特性を決定づける代表長さであるフィラメントの直径とほぼ等しいため、その値を推定することが可能である。</li>
                                 <li>フィラメントの直径を変えたり、気体の種類を変えて実験を行うと、それらによる遷移圧力の変化で平均自由行程の変化具合もわかる。</li>
                             </ul>
@@ -136,7 +136,7 @@
                         </div>
                         <div class="col-sm-4 align-center">
                             <img src="imgs/Kn_table.png" alt="Kn_table" width="90%">
-                            <p style="text-align:center;">工学における分類</p>
+                            <p style="text-align:center;">真空工学における<i>Kn</i>数による流れの分類</p>
                         </div>
                     </div>
                     <div class="row">
@@ -161,11 +161,11 @@
                 <section class="parag2">
                     <div style="margin: 0 10px;" class="row">
                         <div class="col-sm-7 align-center">
-                            <img src="imgs/Kn_pipe.png" alt="Kn_pipe" width="90%">
+                            <img src="imgs/Kn_pipe_t.png" alt="Kn_pipe" width="90%">
                             <p style="text-align:center;">丸パイプの場合</p>
                         </div>
                         <div class="col-sm-5 align-center">
-                            <img src="imgs/Kn_cylinder.png" alt="Kn_cylinder" width="90%">
+                            <img src="imgs/Kn_cylinder_t.png" alt="Kn_cylinder" width="90%">
                             <p style="text-align:center;">同軸円筒のフィラメントの場合</p>
                         </div>
                     </div>
@@ -254,7 +254,7 @@
                                         <mo>(2)</mo>
                                     </math>
                                 </div>
-                                と測定できるので、<math><msub><mi>R</mi><mi>w</mi></msub><mo>=</mo><msub><mi>V</mi><mi>w</mi></msub><mo lspace="0" rspace="0">/</mo><msub><mi>I</mi><mi>w</mi></msub></math>を使って<math><msub><mi>R</mi><mi>w</mi></msub></math>を求めることができる。小さい電流では<math><msub><mi>T</mi><mn>0</mn></msub><mo>&asymp;</mo><msub><mi>T</mi><mi>r</mi></msub></math>なので、その時の<math><msub><mi>R</mi><mi>w</mi></msub></math>から(<math><msub><mi>R</mi><mrow><mi>w</mi><mi>r</mi></mrow></msub></math>を差引いて)<math><msub><mi>R</mi><mi>c</mi></msub></math>を推定できる。
+                                と測定できるので、<math><msub><mi>R</mi><mi>w</mi></msub><mo>=</mo><msub><mi>V</mi><mi>w</mi></msub><mo lspace="0" rspace="0">/</mo><msub><mi>I</mi><mi>w</mi></msub></math>を使って<math><msub><mi>R</mi><mi>w</mi></msub></math>を求めることができる。小さい電流では<math><msub><mi>T</mi><mn>0</mn></msub><mo>&asymp;</mo><msub><mi>T</mi><mi>r</mi></msub></math>(<math><msub><mi>T</mi><mi>R</mi></msub><mo>&asymp;</mo><mn>0</mn></math>)なので、その時の<math><msub><mi>R</mi><mi>w</mi></msub></math>から(<math><msub><mi>R</mi><mrow><mi>w</mi><mi>r</mi></mrow></msub></math>を差引いて)<math><msub><mi>R</mi><mi>c</mi></msub></math>を推定できる。
                                 </li>
                             </ul>
                         </div>
@@ -263,7 +263,7 @@
                         </div>
                     </div>
                     <ul>
-                        <li>さて、フィラメントの温度がΔ<math><mi>T</mi></math>変化した時、<math><msub><mi>R</mi><mi>w</mi></msub></math>がΔ<math><msub><mi>R</mi><mi>w</mi></msub></math>変化したとすると、<i>β</i>が一定であれば、以下のように、Δ<math><msub><mi>R</mi><mi>w</mi></msub></math>はΔ<math><mi>T</mi></math>に比例する。
+                        <li>さて、フィラメントの温度がΔ<math><mi>T</mi></math>変化した時、<math><msub><mi>R</mi><mi>w</mi></msub></math>がΔ<math><msub><mi>R</mi><mi>w</mi></msub></math>変化したとすると、<i>β</i>が一定であれば、以下のようにΔ<math><msub><mi>R</mi><mi>w</mi></msub></math>はΔ<math><mi>T</mi></math>に比例する。
                         <div style="margin: 10px;">
                             <math display="block" style="font-size: 0.9rem;">
                                 <msub><mi>R</mi><mi>w</mi></msub><mo>+</mo><mo>Δ</mo><msub><mi>R</mi><mi>w</mi></msub><mo>=</mo><msub><mi>R</mi><mi>c</mi></msub><mo>+</mo><msub><mi>R</mi><mrow><mi>w</mi><mi>t</mi></mrow></msub><mo>[</mo><mn>1</mn><mo>+</mo><mi>β</mi><mo>(</mo><msub><mi>T</mi><mi>R</mi></msub><mo>+</mo><mo>Δ</mo><mi>T</mi><mo>)</mo><mo>]</mo><mo>=</mo><msub><mi>R</mi><mi>c</mi></msub><mo>+</mo><msub><mi>R</mi><mrow><mi>w</mi><mi>t</mi></mrow></msub><mo>(</mo><mn>1</mn><mo>+</mo><mi>β</mi><msub><mi>T</mi><mi>R</mi></msub><mo>)</mo><mo>+</mo><mi>β</mi><msub><mi>R</mi><mrow><mi>w</mi><mi>t</mi></mrow></msub><mo>Δ</mo><mi>T</mi>
@@ -293,10 +293,10 @@
                             </math>
                         </div>
                         つまり、<math><msub><mi>V</mi><mi>a</mi></msub></math>の変化<math><mo lspace="0" rspace="0">Δ</mo><msub><mi>V</mi><mi>a</mi></msub></math>を測定すれば、フィラメントの温度変化<math><mo lspace="0" rspace="0">Δ</mo><mi>T</mi></math>がわかる。</li>
-                        <li>なお、<math><msub><mi>I</mi><mi>w</mi></msub></math>の式から、<math><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><msub><mi>R</mi><mi>w</mi></msub><mo>&Gt;</mo><mo lspace="0" rspace="0">Δ</mo><msub><mi>R</mi><mi>w</mi></msub></math>なら<math><msub><mi>I</mi><mi>w</mi></msub></math>の変化は小さい。 もし<math><msub><mi>I</mi><mi>w</mi></msub></math>の変化が小さければ、 <math><mo>Δ</mo><mo>T</mo></math>は<math><mo>Δ</mo><msub><mi>V</mi><mi>a</mi></msub></math>にほぼ比例することになる。</li>
+                        <li>なお、<math><msub><mi>I</mi><mi>w</mi></msub></math>の式から、<math><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><msub><mi>R</mi><mi>w</mi></msub><mo>&Gt;</mo><mo lspace="0" rspace="0">Δ</mo><msub><mi>R</mi><mi>w</mi></msub></math>なら<math><msub><mi>I</mi><mi>w</mi></msub></math>の変化は小さい。もし<math><msub><mi>I</mi><mi>w</mi></msub></math>の変化が小さければ、 Δ<math><mi>T</mi></math>はΔ<math><msub><mi>V</mi><mi>a</mi></msub></math>にほぼ比例することになる。</li>
                     </ul>
                     <ul>
-                        <li>一方、フィラメントの温度<math><mi>T</mi></math>(<math><mo>=</mo><msub><mi>T</mi><mn>0</mn></msub><mo>+</mo><mo>Δ</mo><mi>T</mi></math>)は、フィラメントへの入力パワーを<math><msub><mi>P</mi><mi>w</mi></msub></math>、フィラメントから周囲(温度<math><msub><mi>T</mi><mi>r</mi></msub></math>)への熱伝達率を<i>α</i>とすると、
+                        <li>一方、フィラメントの温度<math><mi>T</mi></math>(<math><mo>=</mo><msub><mi>T</mi><mn>0</mn></msub><mo>+</mo><mo lspace="0" rspace="0">Δ</mo><mi>T</mi></math>)は、フィラメントへの入力パワーを<math><msub><mi>P</mi><mi>w</mi></msub></math>、フィラメントから周囲(温度<math><msub><mi>T</mi><mi>r</mi></msub></math>)への熱伝達率を<i>α</i>とすると、
                         <div style="margin: 10px;">
                             <math display="block" style="font-size: 0.9rem;">
                                 <msub><mi>P</mi><mi>w</mi></msub><mo>=</mo><mi>α</mi><mo>(</mo><mi>T</mi><mo>-</mo><msub><mi>T</mi><mi>r</mi></msub><mo>)</mo><mo>=</mo><mi>α</mi><mo>(</mo><msub><mi>T</mi><mn>0</mn></msub><mo>+</mo><mo>Δ</mo><mi>T</mi><mo>-</mo><msub><mi>T</mi><mi>r</mi></msub><mo>)</mo><mo>=</mo><mi>α</mi><mo>(</mo><msub><mi>T</mi><mi>R</mi></msub><mo>+</mo><mo>Δ</mo><mi>T</mi><mo>)</mo>
@@ -329,7 +329,7 @@
                                 <mo>(4)</mo>
                             </math>
                         </div>
-                        という関係が得られる。すなわち、<math><msub><mi>V</mi><mi>a</mi></msub></math>の電圧変化<math><mo>Δ</mo><msub><mi>V</mi><mi>a</mi></msub></math>を測定することで、その時の熱伝達率<i>α</i>を推定することができる。もちろん、<math><msub><mi>V</mi><mn>1</mn></msub></math>と<math><msub><mi>V</mi><mi>w</mi></msub></math>も同時に測定する必要がある。</li>
+                        という関係が得られる。すなわち、<math><msub><mi>V</mi><mi>a</mi></msub></math>の電圧変化Δ<math><msub><mi>V</mi><mi>a</mi></msub></math>を測定することで、その時の熱伝達率<i>α</i>を推定することができる。もちろん、<math><msub><mi>V</mi><mn>1</mn></msub></math>と<math><msub><mi>V</mi><mi>w</mi></msub></math>も同時に測定する必要がある。</li>
                         <li><math><msub><mi>V</mi><mi>a</mi></msub></math>の変化は小さいので、ブリッジ回路を用いて精度よく測定する必要がある。</li>
                     </ul>
                     <h2 style="margin: 10px 0px;">注意点など</h2>
@@ -353,10 +353,10 @@
                         </div>
                     </div>
                     <ul>
-                        <li>例えば、「Raspberry PIで学ぶ電子工作、金丸隆志、技術評論社」の第1章参照。</li>
+                        <li>例えば、「Raspberry PIで学ぶ電子工作、金丸隆志、技術評論社」の第1章を参照。</li>
                         <li>ラズパイ(Raspberry Pi)は、イギリスの財団が開発した、クレジットカードサイズの超小型・安価なLinuxコンピューターである。</li>
                         <Li>基盤1枚にCPU、メモリ、USB、HDMI端子などを備え、プログラミングや電子工作、IoT機器(監視カメラ、サーバー等)の「脳」として、初心者からエンジニアまで世界中で広く使用されている。</Li>
-                        <li>学習用として、Pythonプログラミングや電子工作の学習ができる。プログラミングと電子部品を組み合わせて、オリジナルな製品を作成できる。</li>
+                        <li>学習用としてPythonプログラミングや電子工作の学習ができる。プログラミングと電子部品を組み合わせることでオリジナルな製品を作成できる。</li>
                     </ul>
                     <div class="row">
                         <div class="col-sm-7">
@@ -368,7 +368,7 @@
                                     <li>IoT・電子工作: センサーやモーターを接続し、自動制御やデータ収集が可能。</li>
                                 </ul>
                                 </li>
-                                <li>ここでは、定番で高機能な「Raspberry PI 5」を使う。</li>
+                                <li>ここでは、定番で高機能な「Raspberry Pi 5」を使う。</li>
                             </ul>
                         </div>
                         <div class="col-sm-5 align-center">
@@ -424,7 +424,7 @@
                 <section class="parag3">
                     <h2>ホイートストンブリッジ回路で抵抗の変化を読み取ろう</h2>
                     <ul>
-                        <li>本実験の前に、計装アンプ、AD変換器、ホイートストンブリッジを使って、抵抗の変化を読み取る、予備実験を行う。</li>
+                        <li>本実験の前に、計装アンプ、AD変換器、ホイートストンブリッジを使って、抵抗の変化を読み取る予備実験を行う。</li>
                         <li>以下のように配線する。
                             <ul>
                                 <li>10 Ωの可変抵抗は単体で使っている。</li>
@@ -444,17 +444,17 @@
                     </div>
                     <div style="margin: 10px 10px;" class="row">
                         <div class="col-sm-6 align-center">
-                            <img src="imgs/pre_circuit_0.png" alt="pre_circuit_0" width="80%">
+                            <img src="imgs/pre_circuit_0_t.png" alt="pre_circuit_0" width="80%">
                             <p style="text-align: center;">-5 V生成回路部の配線</p>
                         </div>
                         <div class="col-sm-6 align-center">
-                            <img src="imgs/pre_circuit_1.png" alt="pre_circuit_1" width="90%">
+                            <img src="imgs/pre_circuit_1_t.png" alt="pre_circuit_1" width="90%">
                             <p style="text-align: center;">計装アンプ、AD変換器(ADS1015またはADS1115)の配線</p>
                         </div>
                     </div>
                     <div style="margin: 10px 10px;" class="row">
                         <div class="col-sm-6 align-center">
-                            <img src="imgs/pre_circuit_2.png" alt="pre_circuit_2" width="85%">
+                            <img src="imgs/pre_circuit_2_t.png" alt="pre_circuit_2" width="85%">
                             <p style="text-align: center;">AD変換器、Raspberry Piの配線</p>
                         </div>
                         <div class="col-sm-6 align-center">
@@ -475,7 +475,7 @@
                         </div>
                         したがって、100倍程度に増倍する場合、<math><msub><mi>R</mi><mi>G</mi></msub><mo>=</mo><mn>1.02</mn><mo>kΩ</mo></math> (1.0 kΩなどの近傍値でも可)を使用する。これにより、入力の2mV～20mVは200mV～2Vに増幅され、Raspberry Piで扱いやすい電圧範囲になる。なお、本実験では、<math><msub><mi>R</mi><mi>G</mi></msub></math>として5 kΩの可変抵抗を使い、0 ~ 3.3 Vの測定レンジに合うように調節する。
                         <ul>
-                            <li>今は、ADS1015への入力は3.3 V、シングルエンド入力なので、測定レンジは0 ~ 3.3 Vとなる。</li>
+                            <li>今回、ADS1015への入力は3.3 V、シングルエンド入力なので、測定レンジは0 ~ 3.3 Vとなる。</li>
                         </ul>
                         </li>
                         <li>配線を完了したら、もう一度配線具合を確認し、下記を確認する。
@@ -494,9 +494,9 @@
                         <li>配線、動作確認が完了したら、Pythonプログラム<a href="docs/pre_test.py">"pre_test.py"</a>をThonnyで走らせる。プログラムを実行する際には、必ず仮想環境をアクティベートした状態で実行すること。</li>
                         <li>このプログラムはADS1015用である。ADS1115を使う場合は、プログラム中の"ads1015"等を"ads1115"等に変更する。</li>
                         <li>このプログラムでは、ADSの一つの入力(A0端子)の値を10秒毎に取得して表示し、同時にcsvファイル("voltage_log.csv")に保存する。</li>
-                        <li>保存されるデータファイルはcsv形式なので、解析等は後でエクセル等で簡単に行える。</li>
+                        <li>保存されるデータファイルはcsv形式なので、解析等は後でエクセル等で行う。</li>
                         <li>システム全体の様子等を下左図に示す。</li>
-                        <li>プログラムが正常に動くと下右図のような画面になり、値が10秒毎に変更されていく。</li>
+                        <li>プログラムが正常に動くと下右図のような画面になり、読み取った値が10秒毎に変更されていく。</li>
                     </ul>
                     <div style="margin: 10px 10px;" class="row">
                         <div class="col-sm-6 align-center">
@@ -526,10 +526,10 @@
                     <div class="row">
                         <div class="col-sm-7">
                             <ul>
-                                <li>タングステンフィラメント(直径10 μm ~ 150 μm、長さ約55 mm)を導入端子に取り付ける。細いので根気強く行う。</li>
+                                <li>タングステンフィラメント(直径10 μm ~ 150 μm、長さ約55 mm)を導入端子に取り付ける。細いので根気強く行う。卓上拡大鏡があると便利。</li>
                                 <li>接続部の接触が不十分だと抵抗値が不安定になるので、極細真鍮パイプ(内径0.6 mm)等に通して締め付け(カシめ)、しっかり取り付ける。細いフィラメントの時は、直径0.55 mmの銅線と一緒にカシメると締まりやすい。</li>
                                 <li>また、表面が錆びていると接触抵抗で抵抗が不安定になるので、接点回復剤等で錆を取る。</li>
-                                <li>取り付け後、テスターでおおよその抵抗値を測定し、計算値に近いことを確認する(<math><msub><mi>R</mi><mi>c</mi></msub></math>だけ大きいはず)。</li>
+                                <li>取り付け後、テスターでおおよその抵抗値を測定し、タングステン線の計算値に近いことを確認する(<math><msub><mi>R</mi><mi>c</mi></msub></math>だけ大きいはず)。</li>
                                 <li>導入端子を真空容器のICF70ポートに取り付ける。</li>
                             </ul>
                         </div>
@@ -544,16 +544,18 @@
                         <li>ロータリーポンプを始動後、しばらくしてターボ分子ポンプを起動する。L型バルブは全開にする。バリアブルリークバルブは閉めておく。</Label></li>
                         <li>真空計をONにする。大きなリーク等がなければしばらく待つと10<sup>-3</sup>Pa程度には達する。</li>
                         <li>バリアブルリークバルブには、空気の場合は何も接続しなくてよい。水素ガスを使う場合は、その1/4インチコネクタにガスのチューブを接続する。</li>
-                        <li>空気を使う場合は何も接続しなくてよい。</li>
                     </ul>
                     <h2 style="margin-top: 5px;">本実験の配線</h2>
                     <ul>
-                        <li>真空容器内のフィラメントの抵抗を測定する回路を組み上げる。フィラメント直径が50 μmの時のブリッジ回路の配線例を下右図に示す。直径が異なる場合は、<math><msub><mi>R</mi><mi><mrow>wr</mrow></mi></msub></math>(計算値)を参考に回路の抵抗を変更する。<math><msub><mi>R</mi><mi>v</mi></msub></math>の可変範囲で<math><msub><mi>V</mi><mi>a</mi></msub></math>がゼロにできるような抵抗の組み合わせとする。</li>
+                        <li>真空容器内のフィラメントの抵抗を測定する回路を組み上げる。フィラメント直径が50 μmの時のブリッジ回路の配線例を下右図に示す。直径が異なる場合は、<math><msub><mi>R</mi><mi><mrow>wr</mrow></mi></msub></math>(計算値)を参考に回路の抵抗を変更する。<math><msub><mi>R</mi><mi>v</mi></msub></math>の可変範囲で<math><msub><mi>V</mi><mi>a</mi></msub></math>がゼロにできるような抵抗の組み合わせとする。
+                        <ul>
+                            <li>よく知られているように、ホイートストンブリッジで<math><msub><mi>V</mi><mi>a</mi></msub><mo>&asymp;</mo><mn>0</mn></math>となるのは、<math><msub><mi>R</mi><mn>1</mn></msub><mo>(</mo><msub><mi>R</mi><mi>w</mi></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>)</mo><mo>&asymp;</mo><msub><mi>R</mi><mn>1</mn></msub><msub><mi>R</mi><mi>v</mi></msub></math>の時である。</li>
+                        </ul></li>
                         <li>フィラメントのパワーは、今回の実験では、直径150～10 μmの時、20～1 mWである。
                         </li>
                         <li>フィラメントを接続したこと以外、予備実験と異なるところは、
                             <ul>
-                                <li>計装アンプの出力はAD変換器のA0端子に入力する。1 kΩを保護抵抗として入れる。</li>
+                                <li>計装アンプの出力はAD変換器のA0端子に入力する。1 kΩを保護抵抗として入れる(3.3 V以上入力されても破損し難くする)。</li>
                                 <li>真空計のアナログ出力(0 ~ 10 V)を、抵抗で分圧して3.3 Vを超えないようにして、AD変換器のA1端子に入力する。</li>
                                 <li>フィラメントの電圧(<math><msub><mi>V</mi><mi>w</mi></msub></math>)をAD変換器のA2端子に入力する。</li>
                                 <li>ブリッジ回路のフィラメント接続側の中間電圧(<math><msub><mi>V</mi><mn>1</mn></msub></math>)をAD変換器のA3端子に入力する。</li>
@@ -567,17 +569,17 @@
                             <p style="text-align: center;">本実験用ブリッジ回路(<math><msub><mi>d</mi><mn>1</mn></msub></math> = 50 μm)</p>
                         </div>
                         <div class="col-sm-6 align-center">
-                            <img src="imgs/act_bridge_circuit.png" alt="act_bridge_circuit" width="95%">
+                            <img src="imgs/act_bridge_circuit_t.png" alt="act_bridge_circuit" width="95%">
                             <p style="text-align: center;">本実験用ブリッジ配線図</p>
                         </div>
                     </div>
                     <div style="margin: 10px 10px;" class="row">
                         <div class="col-sm-6 align-center">
-                            <img src="imgs/act_circuit_1.png" alt="act_circuit_1" width="95%">
+                            <img src="imgs/act_circuit_1_t.png" alt="act_circuit_1" width="95%">
                             <p style="text-align: center;">本実験での計装アンプ、AD変換器の配線</p>
                         </div>
                         <div class="col-sm-6 align-center">
-                            <img src="imgs/act_circuit_2.png" alt="act_circuit_2" width="95%">
+                            <img src="imgs/act_circuit_2_t.png" alt="act_circuit_2" width="95%">
                             <p style="text-align: center;">AD変換器、Raspberry Piの配線</p>
                         </div>
                     </div>
@@ -607,7 +609,7 @@
                     <ul>
                         <li style="border-bottom: none;">配線が終わったら、予備試験と同様、各部の電圧を確認する。
                         <ul>
-                            <li><math><msub><mi>R</mi><mi>G</mi></msub></math>は1 kΩ程度にしておく。</li>
+                            <li><math><msub><mi>R</mi><mi>G</mi></msub></math>はとりあえず1 kΩ程度にしておく。</li>
                             <li>外部電源から電圧<math><msub><mi>V</mi><mn>0</mn></msub></math>を加える。最初は低い電圧(0.5 V程度)にしておく。</li>
                             <li>ブリッジ回路に電圧がかかっていること、<math><msub><mi>V</mi><mi>a</mi></msub></math>に電圧が出ている事を確認する。また、10 Ω可変抵抗(<math><msub><mi>R</mi><mi>v</mi></msub></math>)を調整し、<math><msub><mi>V</mi><mi>a</mi></msub></math>が0 V付近にできることを確認する。</li>
                             <li><math><msub><mi>R</mi><mi>G</mi></msub></math>を調整し、計装アンプの出力電圧が所定の倍率になっていることを確認する。</li>
@@ -619,7 +621,7 @@
                     <h2 style="margin: 5px 0px;">計測用プログラム</h2>
                     <ul>
                         <li>配線確認が終了したら、Pythonプログラム<a href="docs/experiment.py">"experiment.py"</a>をThonnyにインストールする。</li>
-                        <li style="border-bottom: none;">このプログラムでは、以下の四つの入力(A0、A1、A2、A3)の値を5秒毎に取得し、表示する。
+                        <li style="border-bottom: none;">このプログラムでは、以下の4つの入力(A0、A1、A2、A3)の値を5秒毎に取得し、表示する。
                         <ul>
                             <li>A0はブリッジ間の電圧<math><msub><mi>V</mi><mi>a</mi></msub></math>。</li>
                             <li>A1は真空計からのアナログ出力(最大 10 V)<math><mi>p</mi></math>。プログラム内で電圧[V]を圧力[Pa]に変換している。</li>
@@ -667,7 +669,7 @@
                                 <li>データを保存するファイル名を設定し、計測プログラムを実行する。今の場合、プロットは参考程度である。また、圧力もそれほど重要ではないが高い圧力の方がよい。低い圧力の場合、印加電圧<math><msub><mi>V</mi><mn>0</mn></msub></math>を大きくするとフィラメントの温度が上がり抵抗が大きくなるので注意。</li>
                                 <li>電圧<math><msub><mi>V</mi><mn>0</mn></msub></math>を0 Vから約0.5 Vまで少しずつ上げていき、<math><msub><mi>V</mi><mn>1</mn></msub></math>、<math><msub><mi>V</mi><mi>w</mi></msub></math>を測定する。</li>
                                 <li>式(2)を使って電流を算出し<math><msub><mi>V</mi><mi>w</mi></msub></math>から<math><msub><mi>R</mi><mi>w</mi></msub><mo>=</mo><msub><mi>R</mi><mi><mrow>wr</mrow></mi></msub><mo>+</mo><msub><mi>R</mi><mi>c</mi></msub></math> (<math><msub><mi>T</mi><mn>1</mn></msub><mo>=</mo><msub><mi>T</mi><mn>2</mn></msub></math>の時)を得る。<math><msub><mi>R</mi><mi><mrow>wr</mrow></mi></msub></math>(計算値)を差引き、<math><msub><mi>R</mi><mi>c</mi></msub></math>を推定する。</li>
-                                <li>アンプを通していないので精度は悪いが。<math><msub><mi>R</mi><mi>w</mi></msub></math>をプロットするとだんだん収束していく(右図)。ほぼ一定になった値を<math><msub><mi>R</mi><mi>w</mi></msub></math>とみなす。右図の場合約5.4 Ωと見積もられる。</li>
+                                <li>アンプを通していないので精度は悪いが、<math><msub><mi>R</mi><mi>w</mi></msub></math>をプロットするとだんだん収束していく(右図)。ほぼ一定になった値を<math><msub><mi>R</mi><mi>w</mi></msub></math>とみなす。右図の場合約5.4 Ωと見積もられる。</li>
                             </ul>
                         </div>
                         <div class="col-sm-5 align-center">
@@ -698,21 +700,21 @@
                         </li>
                         <li>もう一度圧力を徐々に1x10<sup>3</sup>~1x10<sup>4</sup> Paまで上げる。圧力が安定した状態で、可変抵抗(<math><msub><mi>R</mi><mi>v</mi></msub></math>)を調整し、A0測定電圧が～0.1 V (～100 mV)となるように再調整する。微妙な調整が必要となるので根気よく行う。
                             <ul>
-                                <li>A0測定電圧が―0.3 V以下にならないようにする。下がり過ぎると素子を破損する可能性がある。</li>
+                                <li>A0測定電圧が-0.3 V以下にならないようにする。下がり過ぎると素子を破損する可能性がある。</li>
                             </ul>
                         </li>
                         <li>念のため、もう一度圧力を下げ、A0最終電圧が2.5 V以上となっていることを確認する。もし2.5～3 Vの範囲に無ければ、再度<math><msub><mi>R</mi><mi>G</mi></msub></math>を調整する。</li>
                         <li>上の作業を繰り返し、A0の最大電圧が2.5~3.0 V、最小電圧が～0.1 Vになるように調整する(測定レンジに合わせる)。</li>
-                        <li>圧力が高い時のA0測定電圧を～0.1 V (～100 mV)と低くしてその辺りの微小なフィラメント抵抗の変化が測定でき、また、圧力に対して電圧がほぼ比例する範囲を測定できることが優先である。</li>
+                        <li>圧力が高い時のA0測定電圧を～0.1 V (～100 mV)と低くしてその辺りの微小なフィラメント抵抗の変化が測定でき、また、圧力に対して電圧がほぼ比例する範囲を測定できることが最優先である。</li>
                     </ul>
                     <h2 style="margin-top: 5px;">本測定</h2>
                     <ul>
                         <li>電圧範囲の調整が終わったら、本測定を始める。プログラムを一旦停止し、調整中に保存された不要なファイルを削除し、保存するデータファイルの名前を設定する。</li>
                         <li>圧力を約1x10<sup>-2</sup>Pa圧力まで下げた状態で<math><msub><mi>V</mi><mi>a</mi></msub></math>がほぼ一定であることを確認後、プログラムをスタートし、データを取りながら圧力をゆっくり上げていく。<math><msub><mi>V</mi><mi>a</mi></msub></math>がほぼ一定になるまで(～10<sup>4</sup> Paまで)測定する。</li>
-                        <li>下図のようなプロットが画面上に表示されれば想定したデータは取れている。また、csvファイルが作成されていることを確認する。</li>
+                        <li>下図のようなプロットが画面上に表示されれば想定したデータは取れている。また、csvファイルが作成・保存されていることを確認する。</li>
                         <li>測定の再現性をみるために、少なくとも2回測定する。</li>
-                        <li>フィラメントの直径が小さくなると(今回の場合は30 μm以下)では、圧力の高い領域での変化が小さくなるため、AD変換素子としては16bitのビット分解能を持つADS1115の方が良い。</li>
-                        <li>また、フィラメントの直径が小さくなると、圧力の高い領域では温度(抵抗)が一定になるまで長い時間がかかる。そのため、計測用プログラムでは、一時停止機能を持たせた。
+                        <li>フィラメントの直径が小さくなると(今回の場合は30 μm以下)では、圧力の高い領域での変化が小さくなるため、AD変換素子としては16 bitのビット分解能を持つADS1115の方が良い。</li>
+                        <li>また、フィラメントの直径が小さくなると、圧力の高い領域では温度(抵抗)が一定になるまで長い時間がかかる。そのため、計測用プログラムでは、一時停止機能を持たせている。
                             <ul>
                                 <li>一時的にバルブを閉めて圧力を一定にし、"s"を入力してプロットとデータ保存を止める。表示は継続されるので、様子をみて値が安定したら"r"を入力してプロットとデータ保存を再開する。</li>
                             </ul>
@@ -728,7 +730,7 @@
                     <div class="row">
                         <div class="col-sm-7">
                             <ul>
-                                <li>保存されたcsvファイルをエクセル等で開き、<math><msub><mi>V</mi><mi>a</mi></msub></math>を圧力<math><mi>p</mi></math>に対してプロットしてみる。例えば、直径30 μmの時の測定例を右図に示す。このプロットは、定性的に以下のように解釈できる。
+                                <li>保存されたcsvファイルをエクセル等で開き、<math><msub><mi>V</mi><mi>a</mi></msub></math>を圧力<math><mi>p</mi></math>に対してプロットしてみる(画面上のプロットとほぼ同じ)。例えば、直径30 μmの時の測定例を右図に示す。このプロットは、定性的に以下のように解釈できる。
                                 <ul>
                                     <li><span style="color: red;">領域A：</span>圧力が高く、気体は粘性流領域となり、気体の熱伝達率は圧力に依存しない。よってフィラメント温度<math><mi>T</mi></math>は圧力<math><mi>p</mi></math>に対して一定となり、結果、<math><msub><mi>V</mi><mi>a</mi></msub></math>(つまり<math><msub><mi>R</mi><mi>w</mi></msub></math>)はほぼ一定となる。</li>
                                     <li><span style="color: orangered;">領域B：</span>圧力が下がり、気体が分子流領域となると、気体の熱伝達率は圧力に比例する。よって<math><mi>T</mi></math>は圧力<math><mi>p</mi></math>に依存し、結果、<math><msub><mi>V</mi><mi>a</mi></msub></math>(つまり<math><msub><mi>R</mi><mi>w</mi></msub></math>)も圧力に依存するようになる。</li>
@@ -738,7 +740,7 @@
                             </ul>
                         </div>
                         <div class="col-sm-5 align-center">
-                            <img src="imgs/result_plot_exp.png" alt="result_plot_exp" width="80%">
+                            <img src="imgs/result_plot_exp_t.png" alt="result_plot_exp" width="80%">
                             <p>取得したデータのプロット例</p>
                         </div>
                     </div>
@@ -803,22 +805,22 @@
                     <h2 style="margin-top: 5px;">モデル式へのフィッティング</h2>
                     <ul>
                         <li>計算した<math><mi>α</mi></math>(<math><mi>p</mi></math>)を式(8)のモデル式にフィッティングする。モデル式は非線形なので、フィッティングにはエクセルのソルバー機能を用いると便利である。そのソルバーでは、モデル、未知変数を指定し、初期値を設定すると、実測値と理論値に残差二乗和を最小にするように変数を自動調整する。ここでは、<math><mi>A</mi></math>、<math><mi>B</mi></math>、<math><msub><mi>p</mi><mn>0</mn></msub></math>を変数とした。</li>
-                        <li>また、マクロを作ることにより、各変数あるいは各変数の組み合わせについて最大値や最小値といった制限を設けることができる。また、ある区間の圧力の値についてフィッティングの際の重みを調整することができる。</li>
-                        <li><math><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mo>50</mo></math>μmの時の測定データ、計算した<math><mi>α</mi></math>、そしてフィッティング結果の例を下図に示す。右端図での赤点が<math><msub><mi>p</mi><mn>0</mn></msub></math>である。この場合124 Paが得られている。緑線はその点での勾配を表す直線である。</li>
+                        <li>また、マクロを作ることにより、各変数あるいは各変数の組み合わせについて最大値や最小値といった制限を設けることができる。また、ある区間の圧力の値についてフィッティングの際の重みを調整することができる。マクロの作成にはAIが手助けとなる。</li>
+                        <li><math><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mo>30</mo></math>μmの時の測定データ、計算した<math><mi>α</mi></math>、そしてフィッティング結果の例を下図に示す。右端図での赤点が<math><msub><mi>p</mi><mn>0</mn></msub></math>である。この場合124 Paが得られている。緑線はその点での勾配を表す直線である。</li>
                     </ul>
                 </section>
                 <section class="parag3">
                     <div style="margin: 0 10px;" class="row">
                         <div class="col-sm-4 align-center">
-                            <img src="imgs/measured_Va.png" alt="measured_Va" width="100%">
+                            <img src="imgs/measured_Va_t.png" alt="measured_Va" width="100%">
                             <p style="text-align:center;">測定した<math><msub><mi>V</mi><mi>a</mi></msub></math></p>
                         </div>
                         <div class="col-sm-4 align-center">
-                            <img src="imgs/calculated_alpha.png" alt="calculated_alpha" width="100%">
+                            <img src="imgs/calculated_alpha_t.png" alt="calculated_alpha" width="100%">
                             <p style="text-align:center;">計算した<math><mi>α</mi></math></p>
                         </div>
                         <div class="col-sm-4 align-center">
-                            <img src="imgs/fitted_alpha_p0.png" alt="fitted_alpha_p0" width="100%">
+                            <img src="imgs/fitted_alpha_p0_t.png" alt="fitted_alpha_p0" width="100%">
                             <p style="text-align:center;">フィッティング結果(橙色)および求めた<math><msub><mi>p</mi><mn>0</mn></msub></math>(赤点)とその点での勾配(緑)</p>
                         </div>
                     </div>
@@ -828,14 +830,15 @@
                         <h2>フィッティングの問題点</h2>
                         <div class="col-sm-6">
                             <ul>
-                                <li>熱伝達率<math><mi>α</mi></math>は、測定した<math><msub><mi>T</mi><mi>R</mi></msub><mo>+</mo></math>Δ<math><mi>T</mi></math>と<math><msub><mi>P</mi><mi>w</mi></msub></math>を使って式(4)から求めるが、式(8)のモデル式では、<math><mi>A</mi></math>、<math><mi>B</mi></math>、<math><msub><mi>P</mi><mn>0</mn></msub></math>の三つのパラメータの大きさの組み合わせにより、うまくフィッティングできても<math><msub><mi>p</mi><mn>0</mn></msub></math>が一意には決まらないという問題がある。</li>
-                                <li>例えば、右図のように、圧力に対して同じ形を持つ温度変化であっても(左側)、その逆数で計算される<math><mi>α</mi></math>は、パラメータ<math><mi>A</mi></math>、<math><mi>B</mi></math>の値によって異なる<math><msub><mi>p</mi><mn>0</mn></msub></math>を与える(右側)。したがって、<math><mi>A</mi></math>または<math><mi>B</mi></math>を決める必要がある。</li>
-                                <li>パラメータ<math><mi>A</mi></math>の値は不明なので、ここでは、合理的な仮定として、粘性流領域の熱伝達率(<math><mi>B</mi></math>)が理論値(式(6)の計算値)<math><msub><mi>α</mi><mi>v</mi></msub></math>に近いとしてフィッティングし、<math><mi>A</mi></math>、<math><msub><mi>P</mi><mn>0</mn></msub></math>を求める。</li>
+                                <li>熱伝達率<math><mi>α</mi></math>は、測定した<math><msub><mi>T</mi><mi>R</mi></msub><mo>+</mo></math>Δ<math><mi>T</mi></math>と<math><msub><mi>P</mi><mi>w</mi></msub></math>を使って式(4)から求めるが、式(8)のモデル式では、<math><mi>A</mi></math>、<math><mi>B</mi></math>、<math><msub><mi>p</mi><mn>0</mn></msub></math>、および<math><msub><mi>P</mi><mi>w</mi></msub></math>(フィラメントパワー)の4つのパラメータの大きさの組み合わせにより、αがうまくフィッティングできても<math><msub><mi>p</mi><mn>0</mn></msub></math>が一意には決まらないという問題がある。</li>
+                                <li>例えば、右図のように、圧力に対して同じ形を持つ温度変化であっても(左側)、その逆数で計算される<math><mi>α</mi></math>は、パラメータ<math><mi>A</mi></math>、<math><mi>B</mi></math>、<math><msub><mi>P</mi><mi>w</mi></msub></math>の値によって異なる<math><msub><mi>p</mi><mn>0</mn></msub></math>を与える(右側)。したがって、<math><mi>A</mi></math>または<math><mi>B</mi></math>を決める必要がある。</li>
+                                <li>パラメータ<math><mi>A</mi></math>の値は不明なので、ここでは、"合理的な仮定"として、粘性流領域の熱伝達率(<math><mi>B</mi></math>)が理論値(式(6)の計算値)<math><msub><mi>α</mi><mi>v</mi></msub></math>に近いとしてフィッティングし、<math><mi>A</mi></math>、<math><msub><mi>P</mi><mn>0</mn></msub></math>を求める。</li>
                                 <li>実際には、接触抵抗(つまり<math><msub><mi>R</mi><mi>w</mi></msub></math>)を実測値近くで微調し、入力パワー<math><msub><mi>P</mi><mi>w</mi></msub></math>を変えてフィッティングを行い、<math><mi>B</mi></math>の値を理論値(式(6)の<math><msub><mi>α</mi><mi>v</mi></msub></math>)に近づけ、その時の<math><mi>A</mi></math>、<math><msub><mi>p</mi><mn>0</mn></msub></math>を記録する。</li>
+                                <li>ただ、この"合理的な仮定"については今後検討の余地がある。</li>
                             </ul>
                         </div>
                         <div class="col-sm-6 align-center">
-                            <img src="imgs/fitting_issue.png" alt="fitting_issue" width="90%">
+                            <img src="imgs/fitting_issue_t.png" alt="fitting_issue" width="95%">
                             <p>フィッティングの問題点</p>
                         </div>
                     </div>
@@ -866,36 +869,36 @@
                     <h2>各フィラメント径での結果</h2>
                     <ul>
                         <li><math><msub><mi>d</mi><mn>1</mn></msub></math> = 150、100、50、30、20、10 μmでの結果の例を下図にまとめている。圧力<math><mi>p</mi></math>に対する熱伝達率<math><mi>α</mi></math>(フィッティング用に大きくしている)の変化(青)とフィッティング結果(橙)である。赤点は変曲点、緑線はそこでの傾きの直線である。</li>
-                        <li><math><msub><mi>d</mi><mn>1</mn></msub></math> = 30 μmまでは12ビットのADC ADS1015を使用した。<math><msub><mi>d</mi><mn>1</mn></msub></math> = 30 μmでは高い圧力領域で測定値が粗くなっている(電圧分解能ぎりぎり)。そこで、20 μm、10μmではADS1115を使用した。</li>
+                        <li><math><msub><mi>d</mi><mn>1</mn></msub></math> = 30 μmまでは12ビットのADC ADS1015を使用した。<math><msub><mi>d</mi><mn>1</mn></msub></math> = 30 μmでは高い圧力領域で測定値が粗くなっている(電圧分解能ぎりぎり)。そこで、20 μm、10μmでは16ビットのADS1115を使用した。</li>
                         <li>特に細い線の時、高い圧領域でαは圧力の変化に敏感になった。下図では、<math><msub><mi>d</mi><mn>1</mn></msub></math> = 20 μmと10 μmの時、圧力を一定にしてしばらく待ち、安定した時の値でフィッティングしている。</li>
                     </ul>
                 </section>
                 <section class="parag3">
                     <div style="margin: 0 10px;" class="row">
                         <div class="col-sm-4 align-center">
-                            <img src="imgs/result_150.png" alt="result_150" width="90%">
+                            <img src="imgs/result_150_t.png" alt="result_150" width="90%">
                             <p style="text-align: center;"><math><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>150</mn><mo>μm</mo></math>。<math><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>76</mn><mo>Pa</mo></math>。</p>
                         </div>
                         <div class="col-sm-4 align-center">
-                            <img src="imgs/result_100.png" alt="result_100" width="90%">
+                            <img src="imgs/result_100_t.png" alt="result_100" width="90%">
                             <p style="text-align: center;"><math><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>100</mn><mo>μm</mo></math>。<math><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>86</mn><mo>Pa</mo></math>。</p>
                         </div>
                         <div class="col-sm-4 align-center">
-                            <img src="imgs/result_50.png" alt="result_50" width="90%">
+                            <img src="imgs/result_50_t.png" alt="result_50" width="90%">
                             <p style="text-align: center;"><math><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>50</mn><mo>μm</mo></math>。<math><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>123</mn><mo>Pa</mo></math>。</p>
                         </div>
                     </div>
                     <div style="margin: 0 10px;" class="row">
                         <div class="col-sm-4 align-center">
-                            <img src="imgs/result_30.png" alt="result_30" width="90%">
+                            <img src="imgs/result_30_t.png" alt="result_30" width="90%">
                             <p style="text-align: center;"><math><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>30</mn><mo>μm</mo></math>。<math><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>236</mn><mo>Pa</mo></math>。</p>
                         </div>
                         <div class="col-sm-4 align-center">
-                            <img src="imgs/result_20.png" alt="result_20" width="90%">
+                            <img src="imgs/result_20_t.png" alt="result_20" width="90%">
                             <p style="text-align: center;"><math><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>20</mn><mo>μm</mo></math>。<math><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>301</mn><mo>Pa</mo></math>。</p>
                         </div>
                         <div class="col-sm-4 align-center">
-                            <img src="imgs/result_10.png" alt="result_50" width="90%">
+                            <img src="imgs/result_10_t.png" alt="result_50" width="90%">
                             <p style="text-align: center;"><math><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>10</mn><mo>μm</mo></math>。<math><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>571</mn><mo>Pa</mo></math>。</p>
                         </div>
                     </div>
@@ -913,7 +916,7 @@
                             </ul>
                         </div>
                         <div class="col-sm-6 align-center">
-                            <p style="margin-top: 15px;"><img src="imgs/result_10_cont.png" alt="result_10_cont" width="90%"></p>
+                            <p style="margin-top: 15px;"><img src="imgs/result_10_cont_t.png" alt="result_10_cont" width="90%"></p>
                             <p><math><msub><mi>d</mi><mn>1</mn></msub></math>= 10 μmの時に連続して測定した時の例</p>
                         </div>
                     </div>
@@ -936,7 +939,7 @@
                             </ul>
                         </div>
                         <div class="col-sm-5 align-center">
-                            <p style="margin-top: 15px;"><img src="imgs/result_summary.png" alt="result_summary" width="90%"></p>
+                            <p style="margin-top: 15px;"><img src="imgs/result_summary_t.png" alt="result_summary" width="90%"></p>
                             <p>平均自由行程の比較</p>
                         </div>
                     </div>
@@ -967,7 +970,7 @@
                         <li>すなわち、加熱フィラメントから気体への熱伝達率が圧力に依存しない領域(粘性流領域)から圧力に比例する領域(分子流領域)に遷移する圧力を測定し、その圧力での平均自由行程がフィラメント直径にほぼ等しいことを利用した。</li>
                         <li>ブリッジ回路を使ってフィラメントの抵抗を精密に測定する回路をつくり、Raspberry Piを使って計測した。</li>
                         <li>空気での測定結果は、直径10～150 μmの範囲では分子直径を使った計算値とファクター2の範囲で一致した。</li>
-                        <li>直径が100μm、150μmと大きくなるについて、平均自由行程は小さめに見積もられた。これは、熱抵抗がフィラメント近傍に集中するという理想的な仮定が成り立たなくなったためと考えられる。</li>
+                        <li>直径が100μm、150μmと大きくなるについて、平均自由行程は小さめに見積もられた。これは、熱抵抗がフィラメント近傍に集中するという理想的な仮定が成り立たなくなったことが主要因と考えられる。</li>
                         <li>今後、気体の種類を例えば水素等に変えて実験すると興味深い。</li>
                         <li>Raspberry Piを使用するのは初めてであったが、参考書の他AIの情報が非常に役に立った。測定用のpythonプログラムや、エクセルのフィッティング用マクロはAIの出力をほぼそのまま使用した。AIはこのような分野では大変有用であることを改めて感じた。</li>
                     </ul>        
